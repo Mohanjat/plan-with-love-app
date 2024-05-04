@@ -1,0 +1,113 @@
+/* write your css here */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title{
+  font-size: 3rem;
+  margin: 6vh;
+  border: 7px dashed rgb(1,17,160);
+  border-radius: 20px;
+  padding: 1vh 5vw;
+}
+
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-items: center; */
+  max-width: 1300px; 
+  margin: 0 auto;
+} 
+
+  .card{
+    width: 300px;
+    height: max-content;
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0.24) 0px 3px 8px;
+  }
+
+.image{
+  width:275px;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+  /* height: 380px; */
+}
+
+.card_info{
+  margin: 20px 5px;
+}
+
+.tour_price{
+  color: #1faa59;
+  font-size: 1.3rem;
+}
+
+.tour_name{
+  font-size: 1.5rem;
+}
+
+.read_more{
+  color: #12b0e8;
+  cursor: pointer;
+}
+
+
+.not_interested{
+  padding: 5px 60px;
+  border-radius: 10px;
+  border: 1px solid black;
+  font-weight: bold;
+  background-color: rgb(243, 219, 219); 
+  cursor: pointer;
+}
+
+.not_interested:hover{
+  background-color: rgb(221, 41, 41);
+  color: white;
+  transition: all 0.2s;
+}
+
+.refresh{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.refresh_btn{
+  padding: 7px 70px;
+  border-radius: 3px;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.refresh_btn:hover{
+  background-color: rgb(219, 217, 217);
+  transition: all 0.4s;
+}
